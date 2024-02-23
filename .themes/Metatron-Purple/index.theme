@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Metatron-Purple
+Comment=A dark flat theme with transparent elements
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Metatron-Purple
+MetacityTheme=Metatron-Purple
+IconTheme=Mint-Y-Dark-Purple
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
