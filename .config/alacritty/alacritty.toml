@@ -1,0 +1,58 @@
+# $HOME/.config/alacritty/alacritty.toml
+# by Rito Ghosh 2023-10-06
+
+# Alacritty now uses TOML formatting for its config files.
+# This is a simple example.
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# It is not obvious how it translates to TOML. But it is extremely straightforward.
+
+# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
+# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
+# write `dynamic_padding = true` (without backticks -`) under the table [window]
+# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
+# This is simple. If not clear, do several trials and errors.
+
+# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
+# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
+# https://github.com/alacritty/alacritty/tree/master#configuration
+
+[window]
+title =  "Terminal"
+dimensions = { columns = 80, lines = 23 }
+decorations = "None"
+opacity = 1
+startup_mode = "Windowed"
+
+[font]
+normal = { family = "Sauce Code Pro Nerd Font Mono", style = "Regular" }
+
+[colors]
+[colors.primary]
+background = "0x1b182c"
+foreground = "0xe7d2aa"
+
+
+[colors.normal]
+black = "0x100e23"
+red = "0xff8080"
+green = "0x95ffa4"
+yellow = "0xffe9aa"
+blue = "0x91ddff"
+magenta = "0xc991e1"
+cyan = "0xaaffe4"
+white = "0xcbe3e7"
+
+[colors.bright]
+black = "0x565575"
+red = "0xff5458"
+green = "0x62d196"
+yellow = "0xffb378"
+blue = "0x65b2ff"
+magenta = "0x906cff"
+cyan = "0x63f2f1"
+white = "0xa6b3cc"
+
+
+
