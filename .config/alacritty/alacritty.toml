@@ -30,8 +30,8 @@ normal = { family = "Sauce Code Pro Nerd Font Mono", style = "Regular" }
 
 [colors]
 [colors.primary]
-background = "0x292b3c"
-foreground = "0xb58cd8"
+background = "0x192330"
+# foreground = "0x81b29a"
 
 
 [colors.normal]
