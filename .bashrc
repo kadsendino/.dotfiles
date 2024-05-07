@@ -7,4 +7,4 @@
 
 # alias ls='ls --color=auto'
 # alias grep='grep --color=auto'
-PS1='\033[38;2;129;178;154m\u@\h[\W]\$ \033[0m'
+PS1='\[\e[38;2;129;178;154m\]\u@\h[\W]\$\[\e[0m\] '
