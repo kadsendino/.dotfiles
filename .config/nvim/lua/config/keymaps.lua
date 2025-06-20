@@ -1,7 +1,9 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-vim.keymap.set("n", "<space>t", require("toggleterm").toggle)
+vim.keymap.set("n", "<space>tt", require("toggleterm").toggle)
+vim.keymap.set("n", "<space>tw", ":terminal<CR>")
+vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
 
 -- Move to window using the <ctrl> hjkl keys
 -- map("n", "<leader><Left>", { desc = "Go to left window", remap = true })
