@@ -20,13 +20,14 @@
 
 [window]
 title =  "Terminal"
-dimensions = { columns = 80, lines = 23 }
-decorations = "None"
-opacity = 1
+dimensions = { columns =80, lines = 23 }
+decorations = "Full"
+opacity = 0.8
 startup_mode = "Windowed"
 
 [font]
 normal = { family = "Sauce Code Pro Nerd Font Mono", style = "Regular" }
+size = 14
 
 [colors]
 [colors.primary]
