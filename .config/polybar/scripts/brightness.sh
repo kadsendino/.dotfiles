@@ -13,4 +13,4 @@ max=$(cat $BRIGHTNESS_PATH/$backlight_dir/max_brightness)
 # Calculate percentage
 percent=$((100 * current / max))
 
-echo " $percent%"
+echo "󰃞 $percent%"
