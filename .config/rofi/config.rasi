@@ -1,4 +1,8 @@
 
 //@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 
+//@theme "/home/maximilian/.local/share/rofi/themes/rounded-purple-dark.rasi"
+
+//@theme "/home/maximilian/.local/share/rofi/themes/squared-material-red.rasi"
+
 @theme "/home/maximilian/.local/share/rofi/themes/rounded-purple-dark.rasi"

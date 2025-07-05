@@ -1,22 +1,19 @@
 #!/bin/bash
 
 # Power options
-shutdown="⏻ Shutdown"
+shutdown=" Shutdown"
 reboot=" Reboot"
 lock=" Lock"
 logout="󰍃 Logout"
-suspend="⏾ Suspend"
 cancel=" Cancel"
 
 # Show menu
-chosen=$(printf "%s\n" "$lock" "$suspend" "$logout" "$reboot" "$shutdown" "$cancel" | rofi -dmenu -i -p "Power Menu" -theme-str '* { font: "JetBrainsMono Nerd Font 12"; }')
-
+chosen=$(printf "%s\n" "$lock" "$logout" "$reboot" "$shutdown" "$cancel" | rofi -dmenu -i -p "Power Menu" -theme-str '* { font: "Sauce Code Pro Nerd Font 18"; }')
 # Execute command based on choice
 case "$chosen" in
-"$shutdown") doas poweroff ;;
-"$reboot") doas reboot ;;
-"$lock") i3lock || betterlockscreen -l || loginctl lock-session ;;
+"$shutdown") sudo shutdown -h now ;;
+"$reboot") sudo reboot ;;
+"$lock") i3lock ;;
 "$logout") bspc quit ;;
-"$suspend") doas zzz ;; # 'zzz' is from 'zzz-utils' or 's2ram'
 *) exit 0 ;;
 esac
