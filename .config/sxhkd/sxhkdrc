@@ -12,10 +12,10 @@ super + b
 
 # program launcher
 super + @space
-	rofi -show drun
+  rofi -show drun
 
 super + {_,shift + }@space
-	rofi -show run
+	rofi -show run -theme-str
 
 super + q
   ~/.config/rofi/powermenu.sh
