@@ -1,0 +1,37 @@
+# Set default zoom level
+set zoom 100
+
+# Use a dark mode
+
+set recolor           true
+set recolor-keephue   true
+
+# Colors
+
+set default-bg        "#aa222222"
+set default-fg        "#550055"
+set recolor-darkcolor "#ffffff"
+set recolor-lightcolor "#352a4e"
+
+
+# Set default page layout
+set pages-per-row     1
+set first-page-column 1
+
+# Scroll step (in pixels)
+set scroll-step 100
+
+# Show statusbar
+set show-statusbar true
+
+# Set default font
+set font "monospace 10"
+
+# Enable smooth scrolling
+set smooth-scroll true
+
+# Disable mouse wheel zoom (optional)
+set mouse-zoom false
+
+set selection-clipboard clipboard
+
