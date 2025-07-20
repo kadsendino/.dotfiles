@@ -24,6 +24,15 @@ super + q
 super + Escape
 	pkill -USR1 -x sxhkd
 
+super + r
+    alacritty -e ranger
+
+# Screenshot
+super + p
+  scrot ~/Bilder/screenshot.png
+
+super + shift + p
+  scrot -s ~/Bilder/screenshot.png
 #
 # bspwm hotkeys
 #
@@ -59,6 +68,8 @@ super + {t,shift + t,s,f}
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
+
+
 
 #
 # focus/swap
@@ -129,3 +140,5 @@ super + alt + shift + {Left,Down,Up,Right}
 # move a floating window
 super + v + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
