@@ -27,6 +27,9 @@ vim.api.nvim_set_keymap("n", "<leader>9", ':exe 9 .. "wincmd w"<CR>', { noremap 
 vim.api.nvim_set_keymap("n", "y+", ":%y<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "d+", ":%d<CR>", { noremap = true })
 
+--Remove leftover spaces
+vim.api.nvim_set_keymap("n", "<leader>sz", ":%s/\\s\\+$//<CR>", { noremap = true })
+
 -- Right click menu support
 vim.keymap.set({ "n", "v" }, "<RightMouse>", function()
   require("menu.utils").delete_old_menus()
