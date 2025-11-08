@@ -8,9 +8,10 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["niri/workspaces", "window"],
+  "modules-left": ["custom/arch","niri/workspaces", "window"],
   "modules-center": ["mpris"],
   "modules-right": [
+    "network",
     "cpu",
     "memory",
     "pulseaudio",
@@ -20,6 +21,11 @@
     "custom/notification",
     "custom/power",
   ],
+  "custom/arch":{
+    "format": "󰣇",
+    "tooltip": false,
+    "on-click": "fuzzel"
+  },
   "custom/spotify": {
     "format": "  {}",
     "return-type": "json",
@@ -49,7 +55,9 @@
   },
   "clock#simpleclock": {
     "tooltip": true,
+    "interval": 1,
     "format": " {:%H:%M}",
+    "tooltip-format": " {:%H:%M:%S}",
   },
   "clock": {
     "format": " {:L%a %d %b}",
@@ -73,7 +81,17 @@
     "interval": 1,
   },
   "memory": {
-    "format": " {used:0.1f}Gi",
+    "format": " {percentage}%",
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f}Gb / {total:0.1f}Gb",
+  },
+  "network": {
+    "interval": 2, // refresh every 2 seconds
+    "format": "󱚻 {signalStrength}%",
+    "format-disconnected": "",
+    "tooltip": true,
+    "tooltip-format": "{ifname}\n {bandwidthDownBits}\n {bandwidthUpBits}\nIP: {ipaddr}",
+    "on-click": "kitty -e nmtui"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",

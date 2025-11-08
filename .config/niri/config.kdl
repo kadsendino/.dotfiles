@@ -271,6 +271,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-sh-at-startup "swaybg -i ~/.wallpaper/sunset-anime.jpg"
 spawn-at-startup "xwayland-satellite"
+spawn-sh-at-startup "~/.config/niri/volume.sh"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
