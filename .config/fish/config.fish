@@ -39,3 +39,6 @@ alias barmodes="nvim ~/.config/ags/modules/bar/modes"
 alias config="nvim ~/.ags/config.json"
 alias default="micro ~/.config/ags/modules/.configuration/user_options.default.json"
 alias colors="kitty @ set-colors -a -c ~/.cache/ags/user/generated/kitty-colors.conf"
+
+# Created by `pipx` on 2025-12-17 13:04:09
+set PATH $PATH /home/maximilian/.local/bin
