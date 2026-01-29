@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+jq -r '
+"layout {
+
+    focus-ring {
+        active-color   \"\(.mPrimary)\"
+        inactive-color \"\(.mSurface)\"
+        urgent-color   \"\(.mError)\"
+    }
+
+    border {
+        active-color   \"\(.mPrimary)\"
+        inactive-color \"\(.mOutline)\"
+        urgent-color   \"\(.mError)\"
+    }
+
+    shadow {
+        color \"#00000070\"
+    }
+
+    tab-indicator {
+        active-color   \"\(.mPrimary)\"
+        inactive-color \"\(.mSecondary)\"
+        urgent-color   \"\(.mError)\"
+    }
+
+    insert-hint {
+        color \"\(.mPrimary)80\"
+    }
+}
+"
+' ~/.config/noctalia/colors.json \
+  >~/.config/niri/colors.kdl
